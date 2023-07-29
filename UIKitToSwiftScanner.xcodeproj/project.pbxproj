@@ -11,6 +11,7 @@
 		4324220F2A74E62300869818 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324220E2A74E62300869818 /* ContentView.swift */; };
 		432422112A74E62600869818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432422102A74E62600869818 /* Assets.xcassets */; };
 		432422142A74E62600869818 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432422132A74E62600869818 /* Preview Assets.xcassets */; };
+		4324221B2A74E67200869818 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4324221A2A74E67200869818 /* BarcodeScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4324220E2A74E62300869818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		432422102A74E62600869818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		432422132A74E62600869818 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4324221A2A74E67200869818 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				4324220E2A74E62300869818 /* ContentView.swift */,
 				432422102A74E62600869818 /* Assets.xcassets */,
 				432422122A74E62600869818 /* Preview Content */,
+				4324221A2A74E67200869818 /* BarcodeScannerView.swift */,
 			);
 			path = UIKitToSwiftScanner;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4324221B2A74E67200869818 /* BarcodeScannerView.swift in Sources */,
 				4324220F2A74E62300869818 /* ContentView.swift in Sources */,
 				4324220D2A74E62300869818 /* UIKitToSwiftScannerApp.swift in Sources */,
 			);
@@ -270,6 +274,7 @@
 				DEVELOPMENT_TEAM = 5J776SMZZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +304,7 @@
 				DEVELOPMENT_TEAM = 5J776SMZZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need the camera to scan";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

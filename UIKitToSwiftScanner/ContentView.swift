@@ -2,20 +2,26 @@
 //  ContentView.swift
 //  UIKitToSwiftScanner
 //
-//  Created by Kenneth Kovacs on 2023-07-28.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isCameraShowing = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("click") {
+                isCameraShowing = true
+            }
+            .sheet(isPresented: $isCameraShowing) {
+                BarcodeScannerView { barcode in
+                    print("Detected barcode: \(barcode)")
+                }
+                .edgesIgnoringSafeArea(.all)
+            }
+            
+            Text("Click to scan barcode")
         }
-        .padding()
     }
 }
 
